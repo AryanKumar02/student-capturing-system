@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--create a DialogPane and include the appropriate controller-->
+
+<DialogPane fx:controller="fsd.assignment.assignment1.EditStudentController"
+            xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <GridPane hgap="20" vgap="20">
+            <Label prefHeight="17.0" prefWidth="75.0" text="Year of Study" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label text="Module Option 1" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label text="Module Option 2" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Label text="Module Option 3" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <!--make use of the EditStudentController to complete the rest of the fxml-->
+            <Label GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="yearStudyDisplay"/>
+            <Label GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="mod1Edit"/>
+            <Label GridPane.rowIndex="1" GridPane.columnIndex="2" fx:id="mod2Edit"/>
+            <Label GridPane.rowIndex="1" GridPane.columnIndex="3" fx:id="mod3Edit"/>
+
+            <Label text="Module Option 1" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <ChoiceBox GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="125" fx:id="mod1ChoiceEdit"/>
+            <Label text="Module Option 2" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+            <ChoiceBox GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="125" fx:id="mod2ChoiceEdit"/>
+            <Label text="Module Option 3" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+            <ChoiceBox GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="125" fx:id="mod3ChoiceEdit"/>
+        </GridPane>
+    </content>
+</DialogPane>
